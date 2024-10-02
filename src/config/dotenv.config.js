@@ -1,0 +1,17 @@
+module.exports = {
+    PORT: parseInt(process.env.PORT) || 2000,
+    APP_URL: process.env.APP_URL || `http://localhost:${process.env.PORT}`,
+    JWT_KEY: process.env.JWT_KEY || 'secret',
+    NODE_ENV: process.env.NODE_ENV || '',
+    XENDIT_URL: process.env.XENDIT_URL || '',
+    SECRET_API_KEY: process.env.SECRET_API_KEY || '',
+    XENDIT_BASE_URL: process.env.XENDIT_BASE_URL,
+    XENDIT_ENV: process.env.XENDIT_ENV,
+    XENDIT_PAYMENT: process.env.XENDIT_PAYMENT,
+    XENDIT_ACCOUNT_KEY: process.env.XENDIT_ACCOUNT_KEY,
+    XENDIT_SERVICE_KEY: process.env.XENDIT_SERVICE_KEY,
+    XENDIT_PAYMENT_SERVICE_KEY: process.env.XENDIT_PAYMENT_SERVICE_KEY,
+    ADS_SERVICE_OTP_KEY: process.env.ADS_SERVICE_OTP_KEY,
+    XENDIT_ENV2: process.env.XENDIT_ENV2,
+    ADS_KEY: process.env.ADS_KEY,
+}

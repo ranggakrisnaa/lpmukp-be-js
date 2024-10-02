@@ -1,0 +1,2758 @@
+﻿[
+    {
+        "name": "Ie Meulee",
+        "location": "Aceh"
+    },
+    {
+        "name": "Keuneukai",
+        "location": "Aceh"
+    },
+    {
+        "name": "Lambada",
+        "location": "Aceh"
+    },
+    {
+        "name": "Kuala Tari",
+        "location": "Aceh"
+    },
+    {
+        "name": "Kuala Peukan Baro",
+        "location": "Aceh"
+    },
+    {
+        "name": "Meureudu",
+        "location": "Aceh"
+    },
+    {
+        "name": "Pante Raja",
+        "location": "Aceh"
+    },
+    {
+        "name": "Peudada",
+        "location": "Aceh"
+    },
+    {
+        "name": "Pusong",
+        "location": "Aceh"
+    },
+    {
+        "name": "Ujung Blang",
+        "location": "Aceh"
+    },
+    {
+        "name": "Krueng Mane",
+        "location": "Aceh"
+    },
+    {
+        "name": "Kuala Cangkoy",
+        "location": "Aceh"
+    },
+    {
+        "name": "Seuneubok Baroh",
+        "location": "Aceh"
+    },
+    {
+        "name": "Idi",
+        "location": "Aceh"
+    },
+    {
+        "name": "Lampulo",
+        "location": "Aceh"
+    },
+    {
+        "name": "Anak Laut",
+        "location": "Aceh"
+    },
+    {
+        "name": "Ujong baroeh",
+        "location": "Aceh"
+    },
+    {
+        "name": "Kuala Tuha",
+        "location": "Aceh"
+    },
+    {
+        "name": "Ujung Serangga",
+        "location": "Aceh"
+    },
+    {
+        "name": "Keude Meukek",
+        "location": "Aceh"
+    },
+    {
+        "name": "Lhok Bengkuang",
+        "location": "Aceh"
+    },
+    {
+        "name": "Labuhanhaji",
+        "location": "Aceh"
+    },
+    {
+        "name": "Sawang Ba'u",
+        "location": "Aceh"
+    },
+    {
+        "name": "Teluk Sinabang (Lugu)",
+        "location": "Aceh"
+    },
+    {
+        "name": "Kuala Langsa",
+        "location": "Aceh"
+    },
+    {
+        "name": "Pangkalan Susu",
+        "location": "Sumatra Utara"
+    },
+    {
+        "name": "Tanjung Balai Asahan",
+        "location": "Sumatra Utara"
+    },
+    {
+        "name": "Belawan",
+        "location": "Sumatra Utara"
+    },
+    {
+        "name": "Pantai Labu",
+        "location": "Sumatra Utara"
+    },
+    {
+        "name": "Tanjung Tiram",
+        "location": "Sumatra Utara"
+    },
+    {
+        "name": "Pulau Tello",
+        "location": "Sumatra Utara"
+    },
+    {
+        "name": "Sibolga",
+        "location": "Sumatra Utara"
+    },
+    {
+        "name": "Teluk Belukar",
+        "location": "Sumatra Utara"
+    },
+    {
+        "name": "Kalangan",
+        "location": "Sumatra Utara"
+    },
+    {
+        "name": "Tuhemberua",
+        "location": "Sumatra Utara"
+    },
+    {
+        "name": "Lahewa",
+        "location": "Sumatra Utara"
+    },
+    {
+        "name": "Bungus",
+        "location": "Sumatra Barat"
+    },
+    {
+        "name": "Muaro Anai",
+        "location": "Sumatra Barat"
+    },
+    {
+        "name": "Carocok Tarusan",
+        "location": "Sumatra Barat"
+    },
+    {
+        "name": "Batu Kalang",
+        "location": "Sumatra Barat"
+    },
+    {
+        "name": "Kambang",
+        "location": "Sumatra Barat"
+    },
+    {
+        "name": "Surantiah",
+        "location": "Sumatra Barat"
+    },
+    {
+        "name": "Muaro Jambu",
+        "location": "Sumatra Barat"
+    },
+    {
+        "name": "Muaro Gadang",
+        "location": "Sumatra Barat"
+    },
+    {
+        "name": "Muaro Batang Kapas",
+        "location": "Sumatra Barat"
+    },
+    {
+        "name": "Api-api",
+        "location": "Sumatra Barat"
+    },
+    {
+        "name": "Tiku",
+        "location": "Sumatra Barat"
+    },
+    {
+        "name": "Muaro Putuih",
+        "location": "Sumatra Barat"
+    },
+    {
+        "name": "Air Bangis",
+        "location": "Sumatra Barat"
+    },
+    {
+        "name": "Sasak",
+        "location": "Sumatra Barat"
+    },
+    {
+        "name": "Karan Aur",
+        "location": "Sumatra Barat"
+    },
+    {
+        "name": "Ulakan Tapakis",
+        "location": "Sumatra Barat"
+    },
+    {
+        "name": "Pantai Tiram",
+        "location": "Sumatra Barat"
+    },
+    {
+        "name": "Pasir Baru",
+        "location": "Sumatra Barat"
+    },
+    {
+        "name": "Sikakap",
+        "location": "Sumatra Barat"
+    },
+    {
+        "name": "Muara Siberut",
+        "location": "Sumatra Barat"
+    },
+    {
+        "name": "Dumai",
+        "location": "Riau"
+    },
+    {
+        "name": "Bagan Siapi-Api",
+        "location": "Riau"
+    },
+    {
+        "name": "Panipahan",
+        "location": "Riau"
+    },
+    {
+        "name": "Sinaboi",
+        "location": "Riau"
+    },
+    {
+        "name": "Bengkalis",
+        "location": "Riau"
+    },
+    {
+        "name": "Selat Panjang",
+        "location": "Riau"
+    },
+    {
+        "name": "Perapat Tunggal",
+        "location": "Riau"
+    },
+    {
+        "name": "Kuala Enok",
+        "location": "Riau"
+    },
+    {
+        "name": "Sungai Guntung",
+        "location": "Riau"
+    },
+    {
+        "name": "Kuala Tungkal",
+        "location": "Jambi"
+    },
+    {
+        "name": "Nipah Panjang",
+        "location": "Jambi"
+    },
+    {
+        "name": "Teluk Majelis",
+        "location": "Jambi"
+    },
+    {
+        "name": "Mendalo Laut",
+        "location": "Jambi"
+    },
+    {
+        "name": "Jakabaring",
+        "location": "Sumatra Selatan"
+    },
+    {
+        "name": "Sungai Lumpur",
+        "location": "Sumatra Selatan"
+    },
+    {
+        "name": "Sungsang",
+        "location": "Sumatra Selatan"
+    },
+    {
+        "name": "Pasar Bantal",
+        "location": "Bengkulu"
+    },
+    {
+        "name": "Pasar Lama",
+        "location": "Bengkulu"
+    },
+    {
+        "name": "Pasar Bawah",
+        "location": "Bengkulu"
+    },
+    {
+        "name": "Pondok Kelapa",
+        "location": "Bengkulu"
+    },
+    {
+        "name": "Pasar Seluma",
+        "location": "Bengkulu"
+    },
+    {
+        "name": "Pulau Baai",
+        "location": "Bengkulu"
+    },
+    {
+        "name": "Air Napal",
+        "location": "Bengkulu"
+    },
+    {
+        "name": "Labuhan Maringgai",
+        "location": "Lampung"
+    },
+    {
+        "name": "Kuala Penet",
+        "location": "Lampung"
+    },
+    {
+        "name": "Teladas",
+        "location": "Lampung"
+    },
+    {
+        "name": "Ketapang",
+        "location": "Lampung"
+    },
+    {
+        "name": "Kalianda",
+        "location": "Lampung"
+    },
+    {
+        "name": "Rangai",
+        "location": "Lampung"
+    },
+    {
+        "name": "Muara Piluk Bakauheni",
+        "location": "Lampung"
+    },
+    {
+        "name": "Way Muli",
+        "location": "Lampung"
+    },
+    {
+        "name": "Kramat",
+        "location": "Lampung"
+    },
+    {
+        "name": "Kunjir",
+        "location": "Lampung"
+    },
+    {
+        "name": "Lempasing",
+        "location": "Lampung"
+    },
+    {
+        "name": "Kota Agung",
+        "location": "Lampung"
+    },
+    {
+        "name": "Tegineneng",
+        "location": "Lampung"
+    },
+    {
+        "name": "Penyandingan",
+        "location": "Lampung"
+    },
+    {
+        "name": "Bengkunat",
+        "location": "Lampung"
+    },
+    {
+        "name": "Kuala Stabas Krui",
+        "location": "Lampung"
+    },
+    {
+        "name": "Durian",
+        "location": "Lampung"
+    },
+    {
+        "name": "Muara Sungai Baturusa",
+        "location": "Kepulauan Bangka Belitung"
+    },
+    {
+        "name": "Sungailiat",
+        "location": "Kepulauan Bangka Belitung"
+    },
+    {
+        "name": "Kurau",
+        "location": "Kepulauan Bangka Belitung"
+    },
+    {
+        "name": "Sungai Selan",
+        "location": "Kepulauan Bangka Belitung"
+    },
+    {
+        "name": "Sadai",
+        "location": "Kepulauan Bangka Belitung"
+    },
+    {
+        "name": "Selat Nasik",
+        "location": "Kepulauan Bangka Belitung"
+    },
+    {
+        "name": "Tanjungpandan",
+        "location": "Kepulauan Bangka Belitung"
+    },
+    {
+        "name": "Munsang",
+        "location": "Kepulauan Bangka Belitung"
+    },
+    {
+        "name": "Gantung",
+        "location": "Kepulauan Bangka Belitung"
+    },
+    {
+        "name": "Manggar",
+        "location": "Kepulauan Bangka Belitung"
+    },
+    {
+        "name": "Batu Duyung",
+        "location": "Kepulauan Riau"
+    },
+    {
+        "name": "Kijang Bintan",
+        "location": "Kepulauan Riau"
+    },
+    {
+        "name": "Pering Ranai",
+        "location": "Kepulauan Riau"
+    },
+    {
+        "name": "Selat Lampa",
+        "location": "Kepulauan Riau"
+    },
+    {
+        "name": "Pulau Lumut",
+        "location": "Kepulauan Riau"
+    },
+    {
+        "name": "Moro",
+        "location": "Kepulauan Riau"
+    },
+    {
+        "name": "Kuala Maras",
+        "location": "Kepulauan Riau"
+    },
+    {
+        "name": "Kiabu",
+        "location": "Kepulauan Riau"
+    },
+    {
+        "name": "Tarempa",
+        "location": "Kepulauan Riau"
+    },
+    {
+        "name": "Tanjung Njang",
+        "location": "Kepulauan Riau"
+    },
+    {
+        "name": "Dompak",
+        "location": "Kepulauan Riau"
+    },
+    {
+        "name": "Barelang",
+        "location": "Kepulauan Riau"
+    },
+    {
+        "name": "Telaga Punggur",
+        "location": "Kepulauan Riau"
+    },
+    {
+        "name": "Tanjung Pasir",
+        "location": "Banten"
+    },
+    {
+        "name": "Cituis",
+        "location": "Banten"
+    },
+    {
+        "name": "Kronjo",
+        "location": "Banten"
+    },
+    {
+        "name": "Lontar",
+        "location": "Banten"
+    },
+    {
+        "name": "Karangantu",
+        "location": "Banten"
+    },
+    {
+        "name": "Terate",
+        "location": "Banten"
+    },
+    {
+        "name": "Wadas",
+        "location": "Banten"
+    },
+    {
+        "name": "Pulokali",
+        "location": "Banten"
+    },
+    {
+        "name": "Anyer",
+        "location": "Banten"
+    },
+    {
+        "name": "Pasauran",
+        "location": "Banten"
+    },
+    {
+        "name": "Argawana",
+        "location": "Banten"
+    },
+    {
+        "name": "Sukanagara",
+        "location": "Banten"
+    },
+    {
+        "name": "Labuan",
+        "location": "Banten"
+    },
+    {
+        "name": "Sidamukti",
+        "location": "Banten"
+    },
+    {
+        "name": "Panimbang",
+        "location": "Banten"
+    },
+    {
+        "name": "Sumur",
+        "location": "Banten"
+    },
+    {
+        "name": "Taman Jaya",
+        "location": "Banten"
+    },
+    {
+        "name": "Cikeusik",
+        "location": "Banten"
+    },
+    {
+        "name": "Binuangeun",
+        "location": "Banten"
+    },
+    {
+        "name": "Banten Selatan",
+        "location": "Banten"
+    },
+    {
+        "name": "Cirendeu",
+        "location": "Banten"
+    },
+    {
+        "name": "Muara Angke",
+        "location": "DKI Jakarta"
+    },
+    {
+        "name": "Nizam Zachman",
+        "location": "DKI Jakarta"
+    },
+    {
+        "name": "Kamal Muara",
+        "location": "DKI Jakarta"
+    },
+    {
+        "name": "Cilincing",
+        "location": "DKI Jakarta"
+    },
+    {
+        "name": "Kalibaru",
+        "location": "DKI Jakarta"
+    },
+    {
+        "name": "Kalibaru Cilincing Marunda (KCM)",
+        "location": "DKI Jakarta"
+    },
+    {
+        "name": "Pulau Pramuka",
+        "location": "DKI Jakarta"
+    },
+    {
+        "name": "Pal jaya",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Muara Gembong",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Sungaibuntu",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Pasir putih",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Ciparage",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Pakisjaya",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Muara ciasem",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Blanakan",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Sukahaji (bugel)",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Karangsong",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Pabean Udik",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Juntinyuat (Glayem)",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Eretan",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Dadap",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Tegal agung",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Majakerta",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Pesisir",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Kejawanan",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Kasenden",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Bungko lor",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Karang reja",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Bondet",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Selopenganten (Bandengan-Citemu)",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Ender",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Gebang mekar",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Cibangban",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Cisolok",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Ciwaru",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Minajaya",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Palabuhanratu",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Ujung genteng",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Jayanti",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Cijeruk",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Cilauteureun",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Cimarimuara",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Ranca buaya",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Nusa cimanuk",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Pamayangsari",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Batukaras",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Nusawiru",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Cikidang",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Bojong Salawe",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Legokjawa",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Madasari",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Muaragatah",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Majingklak",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Palatar Agung",
+        "location": "Jawa Barat"
+    },
+    {
+        "name": "Kaliwlingi",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Kluwut",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Krakahan",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Prapag Kidul",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Pulolampes",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Pengaradan",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Sawojajar",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Karangdempel",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Larangan",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Suradadi",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Tegalsari",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Asemdoyong",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Mojo",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Tanjungsari",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Nyamplungsari",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Jambean",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Wonokerto",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Pekalongan",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Celong",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Klidang Lor",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Roban",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Seklayu",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Bandengan",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Sendang Sikucing",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Tawang",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Tambak Lorok",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Mangunharjo",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Wedung",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Morodemak",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Bandungharjo",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Bondo",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Demaan",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Karimunjawa",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Kedungmalang",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Mlonggo",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Panggung",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Ujung Batu",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Ujung Watu",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Tubanan",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Bajomulyo",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Banyutowo",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Karanganyar",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Pandangan",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Pangkalan",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Sarang",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Tanjung Sari",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Tasik Agung",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Binangun",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Karanglincak",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Pasar Banggi",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Tunggulsari",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Tegalkatilayu",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Menganti Kisik",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Cilacap",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Jetis",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Kemiren",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Lengkong",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Sentolokawat",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Karang Duwur",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Logending",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Pasir",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Tanggulangin",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Jatikontal",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Keburuhan",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Kertojayan",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Jatimalang",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Sumberejo",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Tritis",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Tanjung Adikarta",
+        "location": "Daerah Istimewa Yogyakarta"
+    },
+    {
+        "name": "Sadeng",
+        "location": "Daerah Istimewa Yogyakarta"
+    },
+    {
+        "name": "Gesing",
+        "location": "Daerah Istimewa Yogyakarta"
+    },
+    {
+        "name": "Bulu",
+        "location": "Jawa Timur"
+    },
+    {
+        "name": "Karang Agung",
+        "location": "Jawa Timur"
+    },
+    {
+        "name": "Palang",
+        "location": "Jawa Timur"
+    },
+    {
+        "name": "Brondong",
+        "location": "Jawa Timur"
+    },
+    {
+        "name": "Weru",
+        "location": "Jawa Timur"
+    },
+    {
+        "name": "Bawean",
+        "location": "Jawa Timur"
+    },
+    {
+        "name": "Campurejo",
+        "location": "Jawa Timur"
+    },
+    {
+        "name": "Banyusangkah",
+        "location": "Jawa Timur"
+    },
+    {
+        "name": "Camplong",
+        "location": "Jawa Timur"
+    },
+    {
+        "name": "Branta Pesisir",
+        "location": "Jawa Timur"
+    },
+    {
+        "name": "Pasongsongan",
+        "location": "Jawa Timur"
+    },
+    {
+        "name": "Lekok",
+        "location": "Jawa Timur"
+    },
+    {
+        "name": "Ngemplakrejo",
+        "location": "Jawa Timur"
+    },
+    {
+        "name": "Mayangan",
+        "location": "Jawa Timur"
+    },
+    {
+        "name": "Paiton",
+        "location": "Jawa Timur"
+    },
+    {
+        "name": "Randu Putih",
+        "location": "Jawa Timur"
+    },
+    {
+        "name": "Besuki",
+        "location": "Jawa Timur"
+    },
+    {
+        "name": "Panarukan",
+        "location": "Jawa Timur"
+    },
+    {
+        "name": "Pondok Mimbo",
+        "location": "Jawa Timur"
+    },
+    {
+        "name": "Grajagan",
+        "location": "Jawa Timur"
+    },
+    {
+        "name": "Muncar",
+        "location": "Jawa Timur"
+    },
+    {
+        "name": "Pancer",
+        "location": "Jawa Timur"
+    },
+    {
+        "name": "Masami",
+        "location": "Jawa Timur"
+    },
+    {
+        "name": "Puger",
+        "location": "Jawa Timur"
+    },
+    {
+        "name": "Watu Ulo",
+        "location": "Jawa Timur"
+    },
+    {
+        "name": "Tegalrejo",
+        "location": "Jawa Timur"
+    },
+    {
+        "name": "Pondok Dadap",
+        "location": "Jawa Timur"
+    },
+    {
+        "name": "Tambakrejo",
+        "location": "Jawa Timur"
+    },
+    {
+        "name": "Popoh",
+        "location": "Jawa Timur"
+    },
+    {
+        "name": "Sine",
+        "location": "Jawa Timur"
+    },
+    {
+        "name": "Prigi",
+        "location": "Jawa Timur"
+    },
+    {
+        "name": "Tamperan",
+        "location": "Jawa Timur"
+    },
+    {
+        "name": "Tawang",
+        "location": "Jawa Timur"
+    },
+    {
+        "name": "Sangsit",
+        "location": "Bali"
+    },
+    {
+        "name": "Amed",
+        "location": "Bali"
+    },
+    {
+        "name": "Batununggul",
+        "location": "Bali"
+    },
+    {
+        "name": "Kusamba",
+        "location": "Bali"
+    },
+    {
+        "name": "Serangan",
+        "location": "Bali"
+    },
+    {
+        "name": "Kedonganan",
+        "location": "Bali"
+    },
+    {
+        "name": "Tanjung Benoa",
+        "location": "Bali"
+    },
+    {
+        "name": "Air Kuning",
+        "location": "Bali"
+    },
+    {
+        "name": "Yeh Sumbul",
+        "location": "Bali"
+    },
+    {
+        "name": "Pengambengan",
+        "location": "Bali"
+    },
+    {
+        "name": "Jembrana",
+        "location": "Bali"
+    },
+    {
+        "name": "Teluk Santong",
+        "location": "Nusa Tenggara Barat"
+    },
+    {
+        "name": "Teluk Awang",
+        "location": "Nusa Tenggara Barat"
+    },
+    {
+        "name": "Labuhan Lombok",
+        "location": "Nusa Tenggara Barat"
+    },
+    {
+        "name": "Tanjung Luar",
+        "location": "Nusa Tenggara Barat"
+    },
+    {
+        "name": "Sape",
+        "location": "Nusa Tenggara Barat"
+    },
+    {
+        "name": "Soro Kempo",
+        "location": "Nusa Tenggara Barat"
+    },
+    {
+        "name": "Labuhan Bajo",
+        "location": "Nusa Tenggara Timur"
+    },
+    {
+        "name": "Reo",
+        "location": "Nusa Tenggara Timur"
+    },
+    {
+        "name": "Nangamese",
+        "location": "Nusa Tenggara Timur"
+    },
+    {
+        "name": "Aimere",
+        "location": "Nusa Tenggara Timur"
+    },
+    {
+        "name": "Konge",
+        "location": "Nusa Tenggara Timur"
+    },
+    {
+        "name": "Nangadhero",
+        "location": "Nusa Tenggara Timur"
+    },
+    {
+        "name": "Amagarapati",
+        "location": "Nusa Tenggara Timur"
+    },
+    {
+        "name": "Adonara",
+        "location": "Nusa Tenggara Timur"
+    },
+    {
+        "name": "Rita Ebang",
+        "location": "Nusa Tenggara Timur"
+    },
+    {
+        "name": "Hukung Lewoleba",
+        "location": "Nusa Tenggara Timur"
+    },
+    {
+        "name": "Pulau Ende",
+        "location": "Nusa Tenggara Timur"
+    },
+    {
+        "name": "Kalabahi",
+        "location": "Nusa Tenggara Timur"
+    },
+    {
+        "name": "Kenarilang",
+        "location": "Nusa Tenggara Timur"
+    },
+    {
+        "name": "Atapupu",
+        "location": "Nusa Tenggara Timur"
+    },
+    {
+        "name": "Tenau",
+        "location": "Nusa Tenggara Timur"
+    },
+    {
+        "name": "Oeba",
+        "location": "Nusa Tenggara Timur"
+    },
+    {
+        "name": "Bolok",
+        "location": "Nusa Tenggara Timur"
+    },
+    {
+        "name": "Bitan",
+        "location": "Nusa Tenggara Timur"
+    },
+    {
+        "name": "Wini",
+        "location": "Nusa Tenggara Timur"
+    },
+    {
+        "name": "Katewel",
+        "location": "Nusa Tenggara Timur"
+    },
+    {
+        "name": "Pero",
+        "location": "Nusa Tenggara Timur"
+    },
+    {
+        "name": "Wanokaka",
+        "location": "Nusa Tenggara Timur"
+    },
+    {
+        "name": "Waingapu",
+        "location": "Nusa Tenggara Timur"
+    },
+    {
+        "name": "Tulandale",
+        "location": "Nusa Tenggara Timur"
+    },
+    {
+        "name": "Pemangkat",
+        "location": "Kalimantan Barat"
+    },
+    {
+        "name": "Selakau",
+        "location": "Kalimantan Barat"
+    },
+    {
+        "name": "Kuala Singkawang",
+        "location": "Kalimantan Barat"
+    },
+    {
+        "name": "Sungai Duri",
+        "location": "Kalimantan Barat"
+    },
+    {
+        "name": "Kuala Mempawah",
+        "location": "Kalimantan Barat"
+    },
+    {
+        "name": "Sungai Rengas",
+        "location": "Kalimantan Barat"
+    },
+    {
+        "name": "Sungai Jawi",
+        "location": "Kalimantan Barat"
+    },
+    {
+        "name": "Sukadana",
+        "location": "Kalimantan Barat"
+    },
+    {
+        "name": "Tanjung Satai",
+        "location": "Kalimantan Barat"
+    },
+    {
+        "name": "Teluk Batang",
+        "location": "Kalimantan Barat"
+    },
+    {
+        "name": "Suka Bangun",
+        "location": "Kalimantan Barat"
+    },
+    {
+        "name": "Sungai Kakap",
+        "location": "Kalimantan Barat"
+    },
+    {
+        "name": "Kuala Jelai",
+        "location": "Kalimantan Tengah"
+    },
+    {
+        "name": "Kuala Pembuang",
+        "location": "Kalimantan Tengah"
+    },
+    {
+        "name": "Kumai",
+        "location": "Kalimantan Tengah"
+    },
+    {
+        "name": "Sei Ijum",
+        "location": "Kalimantan Tengah"
+    },
+    {
+        "name": "Ujung Pandaran",
+        "location": "Kalimantan Tengah"
+    },
+    {
+        "name": "Selat Jeruju",
+        "location": "Kalimantan Tengah"
+    },
+    {
+        "name": "Bahaur",
+        "location": "Kalimantan Tengah"
+    },
+    {
+        "name": "Batanjung",
+        "location": "Kalimantan Tengah"
+    },
+    {
+        "name": "Pasar Beringin",
+        "location": "Kalimantan Tengah"
+    },
+    {
+        "name": "Banjarmasin",
+        "location": "Kalimantan Selatan"
+    },
+    {
+        "name": "Aluh aluh",
+        "location": "Kalimantan Selatan"
+    },
+    {
+        "name": "Swarangan",
+        "location": "Kalimantan Selatan"
+    },
+    {
+        "name": "Muara Kintap",
+        "location": "Kalimantan Selatan"
+    },
+    {
+        "name": "Batulicin",
+        "location": "Kalimantan Selatan"
+    },
+    {
+        "name": "Kotabaru",
+        "location": "Kalimantan Selatan"
+    },
+    {
+        "name": "Teluk Tamiang",
+        "location": "Kalimantan Selatan"
+    },
+    {
+        "name": "Api-Api",
+        "location": "Kalimantan Timur"
+    },
+    {
+        "name": "Manggar Baru",
+        "location": "Kalimantan Timur"
+    },
+    {
+        "name": "Selili",
+        "location": "Kalimantan Timur"
+    },
+    {
+        "name": "Sambaliung",
+        "location": "Kalimantan Timur"
+    },
+    {
+        "name": "Tanjung Limau",
+        "location": "Kalimantan Timur"
+    },
+    {
+        "name": "Sangatta",
+        "location": "Kalimantan Timur"
+    },
+    {
+        "name": "Bunyu",
+        "location": "Kalimantan Utara"
+    },
+    {
+        "name": "Tengkayu II",
+        "location": "Kalimantan Utara"
+    },
+    {
+        "name": "Juata",
+        "location": "Kalimantan Utara"
+    },
+    {
+        "name": "Mansapa",
+        "location": "Kalimantan Utara"
+    },
+    {
+        "name": "Yamaker",
+        "location": "Kalimantan Utara"
+    },
+    {
+        "name": "Sebatik",
+        "location": "Kalimantan Utara"
+    },
+    {
+        "name": "Bone-Bone Munte",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Malangke",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Balambang",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Bonepute",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Ulo-Ulo",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Pontap",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Cenranae",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Botto",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Lonrae",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Kajuara",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Cendrana",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Tongke-Tongke",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Lappa",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Bonto Bahari Bulukumba",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Bintarore",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Herlang",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Bajange",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Panrang Luhu",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Bentengnge",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Parapara",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Kajang",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Birea",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Tanga-Tanga",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Tanrusampe",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Pabbiringan",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Jeneponto",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Beba",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Je'ne",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Lamangkia",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Boddia",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Soreang",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Mangindara",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Borombong Benteng Somba Opu",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Paotere",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Untia",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Bonto Bahari Maros",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Maccinibaji",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Bawasalo",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Polejiwa",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Sumpang Binangae",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Kupa",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Cempae",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Siddo",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Lero",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Pajalele",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Bonehalang",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Lantora",
+        "location": "Sulawesi Barat"
+    },
+    {
+        "name": "Palipi",
+        "location": "Sulawesi Barat"
+    },
+    {
+        "name": "Banggae",
+        "location": "Sulawesi Barat"
+    },
+    {
+        "name": "Kasiwa",
+        "location": "Sulawesi Barat"
+    },
+    {
+        "name": "Babana",
+        "location": "Sulawesi Barat"
+    },
+    {
+        "name": "Pasangkayu",
+        "location": "Sulawesi Barat"
+    },
+    {
+        "name": "Kendari",
+        "location": "Sulawesi Tenggara"
+    },
+    {
+        "name": "Sodohoa",
+        "location": "Sulawesi Tenggara"
+    },
+    {
+        "name": "Lasolo",
+        "location": "Sulawesi Tenggara"
+    },
+    {
+        "name": "Sawa",
+        "location": "Sulawesi Tenggara"
+    },
+    {
+        "name": "Molawe",
+        "location": "Sulawesi Tenggara"
+    },
+    {
+        "name": "Soropia",
+        "location": "Sulawesi Tenggara"
+    },
+    {
+        "name": "Langara",
+        "location": "Sulawesi Tenggara"
+    },
+    {
+        "name": "Torobulu",
+        "location": "Sulawesi Tenggara"
+    },
+    {
+        "name": "Tinanggea",
+        "location": "Sulawesi Tenggara"
+    },
+    {
+        "name": "Poleang",
+        "location": "Sulawesi Tenggara"
+    },
+    {
+        "name": "Sikeli",
+        "location": "Sulawesi Tenggara"
+    },
+    {
+        "name": "Rumbia Tengah",
+        "location": "Sulawesi Tenggara"
+    },
+    {
+        "name": "Wameo",
+        "location": "Sulawesi Tenggara"
+    },
+    {
+        "name": "Minaminanga",
+        "location": "Sulawesi Tenggara"
+    },
+    {
+        "name": "Pasarwajo",
+        "location": "Sulawesi Tenggara"
+    },
+    {
+        "name": "Kamaru",
+        "location": "Sulawesi Tenggara"
+    },
+    {
+        "name": "Sampolawa",
+        "location": "Sulawesi Tenggara"
+    },
+    {
+        "name": "Laino",
+        "location": "Sulawesi Tenggara"
+    },
+    {
+        "name": "Tondasi",
+        "location": "Sulawesi Tenggara"
+    },
+    {
+        "name": "Numana",
+        "location": "Sulawesi Tenggara"
+    },
+    {
+        "name": "Anaiwoi",
+        "location": "Sulawesi Tenggara"
+    },
+    {
+        "name": "Dawi-dawi",
+        "location": "Sulawesi Tenggara"
+    },
+    {
+        "name": "Mangolo",
+        "location": "Sulawesi Tenggara"
+    },
+    {
+        "name": "Pitulua",
+        "location": "Sulawesi Tenggara"
+    },
+    {
+        "name": "Sipakainge",
+        "location": "Sulawesi Tenggara"
+    },
+    {
+        "name": "Diapatih",
+        "location": "Sulawesi Tengah"
+    },
+    {
+        "name": "Kwala Besar",
+        "location": "Sulawesi Tengah"
+    },
+    {
+        "name": "Labuton",
+        "location": "Sulawesi Tengah"
+    },
+    {
+        "name": "Ogotua",
+        "location": "Sulawesi Tengah"
+    },
+    {
+        "name": "Batusuya",
+        "location": "Sulawesi Tengah"
+    },
+    {
+        "name": "Pangalaseang",
+        "location": "Sulawesi Tengah"
+    },
+    {
+        "name": "Donggala",
+        "location": "Sulawesi Tengah"
+    },
+    {
+        "name": "Taipa Palu",
+        "location": "Sulawesi Tengah"
+    },
+    {
+        "name": "Paranggi",
+        "location": "Sulawesi Tengah"
+    },
+    {
+        "name": "Gebang Rejo",
+        "location": "Sulawesi Tengah"
+    },
+    {
+        "name": "Ampana",
+        "location": "Sulawesi Tengah"
+    },
+    {
+        "name": "Bahari",
+        "location": "Sulawesi Tengah"
+    },
+    {
+        "name": "Malenge",
+        "location": "Sulawesi Tengah"
+    },
+    {
+        "name": "Pagimana",
+        "location": "Sulawesi Tengah"
+    },
+    {
+        "name": "Salakan",
+        "location": "Sulawesi Tengah"
+    },
+    {
+        "name": "Balantak",
+        "location": "Sulawesi Tengah"
+    },
+    {
+        "name": "Bonebakal",
+        "location": "Sulawesi Tengah"
+    },
+    {
+        "name": "Bualemo",
+        "location": "Sulawesi Tengah"
+    },
+    {
+        "name": "Bunta",
+        "location": "Sulawesi Tengah"
+    },
+    {
+        "name": "Toili",
+        "location": "Sulawesi Tengah"
+    },
+    {
+        "name": "Montop",
+        "location": "Sulawesi Tengah"
+    },
+    {
+        "name": "Mato",
+        "location": "Sulawesi Tengah"
+    },
+    {
+        "name": "Kolonodale",
+        "location": "Sulawesi Tengah"
+    },
+    {
+        "name": "Lafeu",
+        "location": "Sulawesi Tengah"
+    },
+    {
+        "name": "Baturube",
+        "location": "Sulawesi Tengah"
+    },
+    {
+        "name": "Bente",
+        "location": "Sulawesi Tengah"
+    },
+    {
+        "name": "Ulunambo",
+        "location": "Sulawesi Tengah"
+    },
+    {
+        "name": "Kwandang",
+        "location": "Gorontalo"
+    },
+    {
+        "name": "Gentuma",
+        "location": "Gorontalo"
+    },
+    {
+        "name": "Inengo",
+        "location": "Gorontalo"
+    },
+    {
+        "name": "Tongo",
+        "location": "Gorontalo"
+    },
+    {
+        "name": "Tenda",
+        "location": "Gorontalo"
+    },
+    {
+        "name": "Tilamuta",
+        "location": "Gorontalo"
+    },
+    {
+        "name": "Wonggarasi Timur",
+        "location": "Gorontalo"
+    },
+    {
+        "name": "Bitung",
+        "location": "Sulawesi Utara"
+    },
+    {
+        "name": "Atep Oki",
+        "location": "Sulawesi Utara"
+    },
+    {
+        "name": "Dodepo",
+        "location": "Sulawesi Utara"
+    },
+    {
+        "name": "Belang",
+        "location": "Sulawesi Utara"
+    },
+    {
+        "name": "Jiko",
+        "location": "Sulawesi Utara"
+    },
+    {
+        "name": "Tanjung Sidupa",
+        "location": "Sulawesi Utara"
+    },
+    {
+        "name": "Tumumpa",
+        "location": "Sulawesi Utara"
+    },
+    {
+        "name": "Kema",
+        "location": "Sulawesi Utara"
+    },
+    {
+        "name": "Likupang",
+        "location": "Sulawesi Utara"
+    },
+    {
+        "name": "Amurang",
+        "location": "Sulawesi Utara"
+    },
+    {
+        "name": "Sauk",
+        "location": "Sulawesi Utara"
+    },
+    {
+        "name": "Ulu",
+        "location": "Sulawesi Utara"
+    },
+    {
+        "name": "Dagho",
+        "location": "Sulawesi Utara"
+    },
+    {
+        "name": "Salibabu",
+        "location": "Sulawesi Utara"
+    },
+    {
+        "name": "Tiley",
+        "location": "Maluku Utara"
+    },
+    {
+        "name": "Daeo Majiko",
+        "location": "Maluku Utara"
+    },
+    {
+        "name": "Tobelo",
+        "location": "Maluku Utara"
+    },
+    {
+        "name": "Tuada",
+        "location": "Maluku Utara"
+    },
+    {
+        "name": "Manitinting",
+        "location": "Maluku Utara"
+    },
+    {
+        "name": "Ternate",
+        "location": "Maluku Utara"
+    },
+    {
+        "name": "Goto",
+        "location": "Maluku Utara"
+    },
+    {
+        "name": "Dufa-Dufa",
+        "location": "Maluku Utara"
+    },
+    {
+        "name": "Gebe",
+        "location": "Maluku Utara"
+    },
+    {
+        "name": "Bacan",
+        "location": "Maluku Utara"
+    },
+    {
+        "name": "Sayoang",
+        "location": "Maluku Utara"
+    },
+    {
+        "name": "Wainin",
+        "location": "Maluku Utara"
+    },
+    {
+        "name": "Waiyoho",
+        "location": "Maluku"
+    },
+    {
+        "name": "Piru",
+        "location": "Maluku"
+    },
+    {
+        "name": "Masarete",
+        "location": "Maluku"
+    },
+    {
+        "name": "Banda",
+        "location": "Maluku"
+    },
+    {
+        "name": "Masohi",
+        "location": "Maluku"
+    },
+    {
+        "name": "Tulehu",
+        "location": "Maluku"
+    },
+    {
+        "name": "Pelabuhan Perikanan Terintegrasi",
+        "location": "Maluku"
+    },
+    {
+        "name": "Leihitu",
+        "location": "Maluku"
+    },
+    {
+        "name": "Salahutu",
+        "location": "Maluku"
+    },
+    {
+        "name": "Ambon",
+        "location": "Maluku"
+    },
+    {
+        "name": "Eri",
+        "location": "Maluku"
+    },
+    {
+        "name": "Ukurlaran",
+        "location": "Maluku"
+    },
+    {
+        "name": "Tamher Timur",
+        "location": "Maluku"
+    },
+    {
+        "name": "Tiakur",
+        "location": "Maluku"
+    },
+    {
+        "name": "Wetar",
+        "location": "Maluku"
+    },
+    {
+        "name": "Tual",
+        "location": "Maluku"
+    },
+    {
+        "name": "Tual",
+        "location": "Maluku"
+    },
+    {
+        "name": "UF",
+        "location": "Maluku"
+    },
+    {
+        "name": "Elat",
+        "location": "Maluku"
+    },
+    {
+        "name": "Weduar",
+        "location": "Maluku"
+    },
+    {
+        "name": "Masnana",
+        "location": "Maluku"
+    },
+    {
+        "name": "Batu Tulis",
+        "location": "Maluku"
+    },
+    {
+        "name": "Fogi",
+        "location": "Maluku"
+    },
+    {
+        "name": "Wamsisi",
+        "location": "Maluku"
+    },
+    {
+        "name": "Kelfik Taar",
+        "location": "Maluku"
+    },
+    {
+        "name": "Ohoi Faan Sathean",
+        "location": "Maluku"
+    },
+    {
+        "name": "Selayar",
+        "location": "Maluku"
+    },
+    {
+        "name": "Dobo",
+        "location": "Maluku"
+    },
+    {
+        "name": "Kalar Kalar",
+        "location": "Maluku"
+    },
+    {
+        "name": "Penambulai",
+        "location": "Maluku"
+    },
+    {
+        "name": "Benjina",
+        "location": "Maluku"
+    },
+    {
+        "name": "Sanggeng",
+        "location": "Papua Barat"
+    },
+    {
+        "name": "Sorong",
+        "location": "Papua Barat"
+    },
+    {
+        "name": "Klademak",
+        "location": "Papua Barat"
+    },
+    {
+        "name": "Katapop",
+        "location": "Papua Barat"
+    },
+    {
+        "name": "Dulanpokpok",
+        "location": "Papua Barat"
+    },
+    {
+        "name": "Dotir",
+        "location": "Papua Barat"
+    },
+    {
+        "name": "Raipawi Abresso",
+        "location": "Papua Barat"
+    },
+    {
+        "name": "Namatota",
+        "location": "Papua Barat"
+    },
+    {
+        "name": "Avona",
+        "location": "Papua Barat"
+    },
+    {
+        "name": "Fandoi",
+        "location": "Papua"
+    },
+    {
+        "name": "Samber",
+        "location": "Papua"
+    },
+    {
+        "name": "Biak Mina Jaya (BMJ)",
+        "location": "Papua"
+    },
+    {
+        "name": "Hamadi Jayapura",
+        "location": "Papua"
+    },
+    {
+        "name": "Waiya Depapre",
+        "location": "Papua"
+    },
+    {
+        "name": "Sarafambai",
+        "location": "Papua"
+    },
+    {
+        "name": "Waharia",
+        "location": "Papua"
+    },
+    {
+        "name": "Poumako",
+        "location": "Papua"
+    },
+    {
+        "name": "Omor",
+        "location": "Papua"
+    },
+    {
+        "name": "Sumuraman",
+        "location": "Papua"
+    },
+    {
+        "name": "Merauke",
+        "location": "Papua"
+    },
+    {
+        "name": "Wanam",
+        "location": "Papua"
+    },
+    {
+        "name": "Benoa",
+        "location": "Bali"
+    },
+    {
+        "name": "Baran",
+        "location": "Kepulauan Riau"
+    },
+    {
+        "name": "Kayuadi",
+        "location": "Sulawesi Selatan"
+    },
+    {
+        "name": "Rangas Mamuju",
+        "location": "Sulawesi Barat"
+    },
+    {
+        "name": "Sungai Berok",
+        "location": "Kepulauan Bangka Belitung"
+    },
+    {
+        "name": "Tanjung Belida",
+        "location": "Kepulauan Bangka Belitung"
+    },
+    {
+        "name": "Tanjung Batu Itam",
+        "location": "Kepulauan Bangka Belitung"
+    },
+    {
+        "name": "Pulo Aceh",
+        "location": "Aceh"
+    },
+    {
+        "name": "Pandanarang",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Argopeni",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Rowo",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Lembupurwo",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Surorejan",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Tegalretno",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Pagak",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Ketapang",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Soroadu",
+        "location": "Nusa Tenggara Barat"
+    },
+    {
+        "name": "Weinde",
+        "location": "Nusa Tenggara Timur"
+    },
+    {
+        "name": "Eilode",
+        "location": "Nusa Tenggara Timur"
+    },
+    {
+        "name": "Teluk Suak",
+        "location": "Kalimantan Barat"
+    },
+    {
+        "name": "Muara Pagatan",
+        "location": "Kalimantan Selatan"
+    },
+    {
+        "name": "Muara Badak",
+        "location": "Kalimantan Timur"
+    },
+    {
+        "name": "Muara Jawa",
+        "location": "Kalimantan Timur"
+    },
+    {
+        "name": "Tanjung Batu",
+        "location": "Kalimantan Timur"
+    },
+    {
+        "name": "Rigah",
+        "location": "Aceh"
+    },
+    {
+        "name": "Purus",
+        "location": "Sumatera Barat"
+    },
+    {
+        "name": "Pulau Halang",
+        "location": "Riau"
+    },
+    {
+        "name": "Perapat Utara",
+        "location": "Riau"
+    },
+    {
+        "name": "Pulau Beruk",
+        "location": "Riau"
+    },
+    {
+        "name": "Parit Nelayan",
+        "location": "Riau"
+    },
+    {
+        "name": "Teluk Batil",
+        "location": "Riau"
+    },
+    {
+        "name": "Sungai Rawa",
+        "location": "Riau"
+    },
+    {
+        "name": "Penyengat",
+        "location": "Riau"
+    },
+    {
+        "name": "Selat Guntung",
+        "location": "Riau"
+    },
+    {
+        "name": "Sungai Kayu Ara",
+        "location": "Riau"
+    },
+    {
+        "name": "Tanjung Kuras",
+        "location": "Riau"
+    },
+    {
+        "name": "Teluk",
+        "location": "Riau"
+    },
+    {
+        "name": "Tanjung Sum",
+        "location": "Riau"
+    },
+    {
+        "name": "Padang Penaik",
+        "location": "Bengkulu"
+    },
+    {
+        "name": "Linau",
+        "location": "Bengkulu"
+    },
+    {
+        "name": "Kahyapu",
+        "location": "Bengkulu"
+    },
+    {
+        "name": "Tanjung Jaya",
+        "location": "Lampung"
+    },
+    {
+        "name": "Karang Anyar",
+        "location": "Lampung"
+    },
+    {
+        "name": "Guring",
+        "location": "Lampung"
+    },
+    {
+        "name": "Sungai Burung",
+        "location": "Lampung"
+    },
+    {
+        "name": "Kelarik Air Mali",
+        "location": "Kepulauan Riau"
+    },
+    {
+        "name": "Tanjung Setelung",
+        "location": "Kepulauan Riau"
+    },
+    {
+        "name": "Batu Belanak",
+        "location": "Kepulauan Riau"
+    },
+    {
+        "name": "Air Payang",
+        "location": "Kepulauan Riau"
+    },
+    {
+        "name": "Meliah",
+        "location": "Kepulauan Riau"
+    },
+    {
+        "name": "Tanjung Kumbik Utara",
+        "location": "Kepulauan Riau"
+    },
+    {
+        "name": "Teluk Depeh",
+        "location": "Kepulauan Riau"
+    },
+    {
+        "name": "Tanjung Balai Karimun",
+        "location": "Kepulauan Riau"
+    },
+    {
+        "name": "Jemaja",
+        "location": "Kepulauan Riau"
+    },
+    {
+        "name": "Nyamuk",
+        "location": "Kepulauan Riau"
+    },
+    {
+        "name": "Penuba",
+        "location": "Kepulauan Riau"
+    },
+    {
+        "name": "Senayang",
+        "location": "Kepulauan Riau"
+    },
+    {
+        "name": "Tajur Biru",
+        "location": "Kepulauan Riau"
+    },
+    {
+        "name": "Tanjung Medan",
+        "location": "Riau"
+    },
+    {
+        "name": "Pujud",
+        "location": "Riau"
+    },
+    {
+        "name": "Rantau Kopar",
+        "location": "Riau"
+    },
+    {
+        "name": "Tanah Putih",
+        "location": "Riau"
+    },
+    {
+        "name": "Pedamaran",
+        "location": "Sumatera Selatan"
+    },
+    {
+        "name": "Gunung Katun Tanjungan",
+        "location": "Lampung"
+    },
+    {
+        "name": "Kagungan Danau Ranau",
+        "location": "Lampung"
+    },
+    {
+        "name": "Wonodadi",
+        "location": "Lampung"
+    },
+    {
+        "name": "Gumukrejo",
+        "location": "Lampung"
+    },
+    {
+        "name": "Erorejo",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Rowoboni",
+        "location": "Jawa Tengah"
+    },
+    {
+        "name": "Andowia",
+        "location": "Sulawesi Tenggara"
+    },
+    {
+        "name": "Tondano",
+        "location": "Sulawesi Utara"
+    },
+    {
+        "name": "Danau Sentani",
+        "location": "Papua"
+    },
+    {
+        "name": "Hasil Laut Sejati",
+        "location": "Kepulauan Riau"
+    },
+    {
+        "name": "Ayong",
+        "location": "Kepulauan Riau"
+    },
+    {
+        "name": "Kamen",
+        "location": "Kepulauan Riau"
+    },
+    {
+        "name": "Kawal Laut Jaya",
+        "location": "Kepulauan Riau"
+    },
+    {
+        "name": "Harmoni Samudra Perkasa",
+        "location": "Kepulauan Riau"
+    },
+    {
+        "name": "Surya Freshindo Intimas",
+        "location": "Kepulauan Riau"
+    },
+    {
+        "name": "Abe Lapan- Lapan",
+        "location": "Kepulauan Riau"
+    },
+    {
+        "name": "Jeni",
+        "location": "Kepulauan Riau"
+    },
+    {
+        "name": "Pelita",
+        "location": "Maluku Utara"
+    },
+    {
+        "name": "Citraraja Ampat",
+        "location": "Papua Barat Daya"
+    },
+    {
+        "name": "Bintang Mas",
+        "location": "Papua"
+    },
+    {
+        "name": "Pasie Nan Tigo",
+        "location": "Sumatera Barat"
+    },
+    {
+        "name": "Lanipa",
+        "location": "Sulawesi Tenggara"
+    },
+    {
+        "name": "Lawata",
+        "location": "Sulawesi Tenggara"
+    },
+    {
+        "name": "Buranga",
+        "location": "Sulawesi Tenggara"
+    },
+    {
+        "name": "Mapaga",
+        "location": "Sulawesi Tengah"
+    },
+    {
+        "name": "Moilong",
+        "location": "Sulawesi Tengah"
+    },
+    {
+        "name": "Liang",
+        "location": "Sulawesi Tengah"
+    },
+    {
+        "name": "Ungkea",
+        "location": "Sulawesi Tengah"
+    },
+    {
+        "name": "Moahino",
+        "location": "Sulawesi Tengah"
+    },
+    {
+        "name": "Petapa",
+        "location": "Sulawesi Tengah"
+    },
+    {
+        "name": "Tandoleo",
+        "location": "Sulawesi Tengah"
+    },
+    {
+        "name": "Tanjung Sidoarjo",
+        "location": "Sulawesi Tengah"
+    },
+    {
+        "name": "Laulalang",
+        "location": "Sulawesi Tengah"
+    },
+    {
+        "name": "Molamahu",
+        "location": "Gorontalo"
+    },
+    {
+        "name": "Dulupi",
+        "location": "Gorontalo"
+    },
+    {
+        "name": "Marisa",
+        "location": "Gorontalo"
+    },
+    {
+        "name": "Tamping",
+        "location": "Maluku Utara"
+    },
+    {
+        "name": "Bere-bere",
+        "location": "Maluku Utara"
+    },
+    {
+        "name": "Tahane",
+        "location": "Maluku Utara"
+    },
+    {
+        "name": "Fayaul",
+        "location": "Maluku Utara"
+    },
+    {
+        "name": "Patani",
+        "location": "Maluku Utara"
+    },
+    {
+        "name": "Loleo",
+        "location": "Maluku Utara"
+    },
+    {
+        "name": "Falabisahaya",
+        "location": "Maluku Utara"
+    },
+    {
+        "name": "Haria",
+        "location": "Maluku"
+    },
+    {
+        "name": "Teluk Bara",
+        "location": "Maluku"
+    },
+    {
+        "name": "Kabalukin",
+        "location": "Maluku"
+    },
+    {
+        "name": "Marlasi",
+        "location": "Maluku"
+    },
+    {
+        "name": "Meror",
+        "location": "Maluku"
+    },
+    {
+        "name": "Koijabi",
+        "location": "Maluku"
+    },
+    {
+        "name": "Bemun",
+        "location": "Maluku"
+    },
+    {
+        "name": "Napdori",
+        "location": "Papua"
+    },
+    {
+        "name": "Sarmi",
+        "location": "Papua"
+    },
+    {
+        "name": "Wersar",
+        "location": "Papua Barat Daya"
+    },
+    {
+        "name": "Waringkris",
+        "location": "Papua Barat Daya"
+    },
+    {
+        "name": "Womom",
+        "location": "Papua Barat Daya"
+    },
+    {
+        "name": "Kumbe",
+        "location": "Papua Selatan"
+    },
+    {
+        "name": "Tanjung Wangi",
+        "location": "Jawa Timur"
+    },
+    {
+        "name": "Labuan Uki",
+        "location": "Sulawesi Utara"
+    }
+]

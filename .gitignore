@@ -1,0 +1,10 @@
+node_modules
+public/images
+public/invoices
+.env
+
+# managed
+**.data.json
+**.node-persist**
+**_IGNORE_**
+# end managed

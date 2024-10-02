@@ -1,0 +1,70 @@
+{
+    "name": "project-ads-lpmukp",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "prisma": {
+        "seed": "node prisma/seeders/index.js"
+    },
+    "lint-staged": {
+        "**/*": "prettier --write --ignore-unknown"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon ./src/index.js",
+        "postinstall": "npx prisma generate",
+        "seed": "npx prisma db seed",
+        "create:only": "npx prisma migrate dev --create-only",
+        "push": "npx prisma db push",
+        "migrate": "npx prisma migrate dev",
+        "migrate:create": "npx prisma migrate dev --create-only",
+        "migrate:dev": "npx prisma migrate dev",
+        "migrate:prod": "npx prisma migrate deploy",
+        "migrate:reset": "npx prisma migrate reset --force",
+        "format:check": "prettier --check .",
+        "format:write": "prettier --write .",
+        "lint:check": "eslint .",
+        "lint:fix": "eslint --fix .",
+        "reset": "npx prisma db push --force-reset",
+        "prepare": "husky",
+        "refresh": "npx prisma generate"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@faker-js/faker": "^8.4.1",
+        "@prisma/client": "^5.11.0",
+        "axios": "^1.6.8",
+        "cheerio": "^1.0.0-rc.12",
+        "cli-table": "^0.3.11",
+        "cookie-parser": "^1.4.6",
+        "cors": "^2.8.5",
+        "csv-parser": "^3.0.0",
+        "dotenv": "^16.4.5",
+        "ejs": "^3.1.10",
+        "eslint": "^8.57.0",
+        "eslint-config-prettier": "^9.1.0",
+        "express": "^4.18.2",
+        "express-list-endpoints": "^7.0.0",
+        "html-pdf": "^3.0.1",
+        "joi": "^17.12.2",
+        "json2xls": "^0.1.2",
+        "jsonwebtoken": "^9.0.2",
+        "morgan": "^1.10.0",
+        "multer": "^1.4.5-lts.1",
+        "nik-parser": "^1.0.1",
+        "node-cron": "^3.0.3",
+        "otpauth": "^9.2.2",
+        "prisma": "^5.10.2",
+        "uuid": "^10.0.0",
+        "whatsapp-web.js": "^1.23.0",
+        "xendit-node": "^4.2.0",
+        "xlsx": "^0.18.5"
+    },
+    "devDependencies": {
+        "husky": "^9.0.11",
+        "lint-staged": "^15.2.2",
+        "nodemon": "^3.1.0",
+        "prettier": "3.2.5"
+    }
+}

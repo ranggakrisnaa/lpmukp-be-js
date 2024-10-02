@@ -1,0 +1,772 @@
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "rhel-openssl-1.0.x"]
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model users {
+  id                   Int                    @id @default(autoincrement())
+  uuid                 String?                @unique @default(uuid())
+  name                 String                 @db.VarChar(255)
+  phone_number         String?                @unique @db.VarChar(45)
+  otp_code             Int?
+  otp_expired_at       DateTime?
+  otp_try_daily        Int?
+  credit_quality       String?                @db.VarChar(45)
+  created_at           DateTime               @default(now())
+  updated_at           DateTime?              @updatedAt
+  applications         applications[]
+  partner_applications applications[]         @relation("applications_partner_idTousers")
+  business_accounts    business_accounts[]
+  business_profiles    business_profiles?
+  collectability       collectability?
+  Cultivation          Cultivation[]
+  logbook_activities   logbook_activities[]
+  notifications        notifications[]
+  operational_logbooks operational_logbooks[]
+  profiles             profiles?
+  remains              remains?
+  roles                roles?
+  user_types           user_types?
+  va                   va?
+  wallets              wallets[]
+}
+
+model roles {
+  id                 Int                  @id @default(autoincrement())
+  user_id            Int?                 @unique
+  name               String               @db.VarChar(45)
+  created_at         DateTime             @default(now())
+  updated_at         DateTime?            @updatedAt
+  role_notifications role_notifications[]
+  users              users?               @relation(fields: [user_id], references: [id])
+}
+
+model profiles {
+  id                Int        @id @default(autoincrement())
+  uuid              String?    @unique @default(uuid())
+  user_id           Int?       @unique
+  village_id        Int?
+  district_id       Int?
+  city_id           Int?
+  province_id       Int?
+  name              String?    @db.VarChar(255)
+  nik               String?    @db.VarChar(45)
+  photo             String?    @db.VarChar(255)
+  id_card           String?    @db.VarChar(255)
+  npwp_photo        String?    @db.VarChar(255)
+  slik_file         String?    @db.VarChar(255)
+  id_card_selfie    String?    @db.VarChar(255)
+  gender            String?    @db.VarChar(45)
+  no_npwp           String?    @db.VarChar(45)
+  debitur_category  String?    @db.VarChar(45)
+  debitur_type      String?    @db.VarChar(45)
+  place_birth       String?    @db.VarChar(255)
+  date_birth        DateTime?  @db.Date
+  marital_status    String?    @db.VarChar(45)
+  no_kusuka         String?    @db.VarChar(45)
+  email             String?    @db.VarChar(45)
+  address           String?    @db.Text
+  jumlah_tanggungan Int?       @default(0)
+  alamat_domisili   String?    @db.Text
+  created_at        DateTime   @default(now())
+  updated_at        DateTime?  @updatedAt
+  cities            cities?    @relation(fields: [city_id], references: [id])
+  districts         districts? @relation(fields: [district_id], references: [id])
+  provinces         provinces? @relation(fields: [province_id], references: [id])
+  users             users?     @relation(fields: [user_id], references: [id])
+  villages          villages?  @relation(fields: [village_id], references: [id])
+
+  @@index([city_id], map: "profiles_city_id_fkey")
+  @@index([district_id], map: "profiles_district_id_fkey")
+  @@index([province_id], map: "profiles_province_id_fkey")
+  @@index([village_id], map: "profiles_village_id_fkey")
+}
+
+model villages {
+  id          Int        @id @default(autoincrement())
+  district_id Int
+  name        String     @db.VarChar(255)
+  postal_code String?    @db.VarChar(45)
+  created_at  DateTime   @default(now())
+  updated_at  DateTime?  @updatedAt
+  profiles    profiles[]
+  districts   districts  @relation(fields: [district_id], references: [id], onDelete: NoAction)
+
+  @@index([district_id], map: "villages_district_id_fkey")
+}
+
+model districts {
+  id         Int        @id @default(autoincrement())
+  city_id    Int?
+  name       String     @db.VarChar(255)
+  created_at DateTime   @default(now())
+  updated_at DateTime?  @updatedAt
+  cities     cities?    @relation(fields: [city_id], references: [id])
+  profiles   profiles[]
+  villages   villages[]
+
+  @@index([city_id], map: "districts_city_id_fkey")
+}
+
+model cities {
+  id          Int         @id @default(autoincrement())
+  province_id Int?
+  name        String      @db.VarChar(255)
+  type        String      @db.VarChar(255)
+  created_at  DateTime    @default(now())
+  updated_at  DateTime?   @updatedAt
+  provinces   provinces?  @relation(fields: [province_id], references: [id])
+  districts   districts[]
+  profiles    profiles[]
+
+  @@index([province_id], map: "cities_province_id_fkey")
+}
+
+model provinces {
+  id         Int        @id @default(autoincrement())
+  name       String     @db.VarChar(255)
+  created_at DateTime   @default(now())
+  updated_at DateTime?  @updatedAt
+  cities     cities[]
+  profiles   profiles[]
+}
+
+model business_profiles {
+  id                                 Int                                  @id @default(autoincrement())
+  uuid                               String?                              @unique @default(uuid())
+  user_id                            Int                                  @unique
+  harbor_id                          Int?
+  business_type_id                   Int?
+  name                               String?                              @db.VarChar(255)
+  lama_usaha                         String?                              @db.VarChar(45)
+  jenis_asset                        String?                              @db.VarChar(45)
+  estimasi_nilai_asset               Decimal?                             @db.Decimal(15, 0)
+  created_at                         DateTime                             @default(now())
+  updated_at                         DateTime?                            @updatedAt
+  business_profile_ecommerces        business_profile_ecommerces[]
+  business_profile_marketing_reaches business_profile_marketing_reaches[]
+  business_types                     business_types?                      @relation(fields: [business_type_id], references: [id])
+  harbors                            harbors?                             @relation(fields: [harbor_id], references: [id], onDelete: NoAction)
+  users                              users                                @relation(fields: [user_id], references: [id], onDelete: NoAction)
+
+  @@index([business_type_id], map: "business_profiles_business_type_id_fkey")
+  @@index([harbor_id], map: "business_profiles_harbor_id_fkey")
+}
+
+model business_types {
+  id                Int                 @id @default(autoincrement())
+  name              String              @db.VarChar(45)
+  created_at        DateTime            @default(now())
+  updated_at        DateTime?           @updatedAt
+  business_profiles business_profiles[]
+}
+
+model marketing_reaches {
+  id                                 Int                                  @id @default(autoincrement())
+  name                               String                               @db.VarChar(255)
+  created_at                         DateTime                             @default(now())
+  updated_at                         DateTime?                            @updatedAt
+  business_profile_marketing_reaches business_profile_marketing_reaches[]
+}
+
+model ecommerces {
+  id                          Int                           @id @default(autoincrement())
+  name                        String                        @db.VarChar(255)
+  created_at                  DateTime                      @default(now())
+  updated_at                  DateTime?                     @updatedAt
+  business_profile_ecommerces business_profile_ecommerces[]
+}
+
+model business_profile_marketing_reaches {
+  id                  Int               @id @default(autoincrement())
+  business_profile_id Int
+  marketing_reach_id  Int
+  created_at          DateTime          @default(now())
+  updated_at          DateTime?         @updatedAt
+  business_profiles   business_profiles @relation(fields: [business_profile_id], references: [id], onDelete: NoAction)
+  marketing_reaches   marketing_reaches @relation(fields: [marketing_reach_id], references: [id], onDelete: NoAction)
+
+  @@index([business_profile_id], map: "business_profile_marketing_reaches_business_profile_id_fkey")
+  @@index([marketing_reach_id], map: "business_profile_marketing_reaches_marketing_reach_id_fkey")
+}
+
+model business_profile_ecommerces {
+  id                  Int               @id @default(autoincrement())
+  business_profile_id Int
+  ecommerce_id        Int
+  created_at          DateTime          @default(now())
+  updated_at          DateTime?         @updatedAt
+  business_profiles   business_profiles @relation(fields: [business_profile_id], references: [id], onDelete: NoAction)
+  ecommerces          ecommerces        @relation(fields: [ecommerce_id], references: [id], onDelete: NoAction)
+
+  @@index([business_profile_id], map: "business_profile_ecommerces_business_profile_id_fkey")
+  @@index([ecommerce_id], map: "business_profile_ecommerces_ecommerce_id_fkey")
+}
+
+model harbors {
+  id                Int                 @id @default(autoincrement())
+  name              String              @db.VarChar(255)
+  location          String              @db.VarChar(255)
+  created_at        DateTime            @default(now())
+  updated_at        DateTime?           @updatedAt
+  business_profiles business_profiles[]
+}
+
+model business_accounts {
+  id             Int       @id @default(autoincrement())
+  user_id        Int
+  bank_id        Int?
+  account_number String?   @db.VarChar(100)
+  account_name   String?   @db.VarChar(100)
+  created_at     DateTime  @default(now())
+  updated_at     DateTime? @updatedAt
+  banks          banks?    @relation(fields: [bank_id], references: [id])
+  users          users     @relation(fields: [user_id], references: [id], onDelete: NoAction)
+
+  @@index([bank_id], map: "business_accounts_bank_id_fkey")
+  @@index([user_id], map: "business_accounts_user_id_fkey")
+}
+
+model banks {
+  id                Int                 @id @default(autoincrement())
+  name              String              @db.VarChar(45)
+  code              String              @db.VarChar(45)
+  logo              String              @db.VarChar(45)
+  manual            Boolean             @default(false)
+  manual_cost       Float               @default(0)
+  instant           Boolean             @default(false)
+  instant_cost      Float               @default(0)
+  created_at        DateTime            @default(now())
+  updated_at        DateTime?           @updatedAt
+  applications      applications[]
+  business_accounts business_accounts[]
+}
+
+model LoanProgram {
+  id           Int            @id @default(autoincrement())
+  name         String         @db.VarChar(255)
+  created_at   DateTime       @default(now())
+  updated_at   DateTime?      @updatedAt
+  applications applications[]
+
+  @@map("loan_programs")
+}
+
+model FinancingPurpose {
+  id           Int            @id @default(autoincrement())
+  name         String         @db.VarChar(255)
+  created_at   DateTime       @default(now())
+  updated_at   DateTime?      @updatedAt
+  applications applications[]
+
+  @@map("financing_purposes")
+}
+
+model applications {
+  id                          Int                @id @default(autoincrement())
+  uuid                        String?            @unique @default(uuid())
+  user_id                     Int
+  partner_id                  Int?
+  installment_id              Int?
+  financing_purpose_id        Int?
+  loan_program_id             Int?
+  bank_id                     Int
+  code                        String             @db.VarChar(45)
+  alamat_usaha                String             @db.VarChar(255)
+  lama_siklus_usaha           String             @db.VarChar(255)
+  estimasi_omset_per_bulan    Float              @default(0)
+  estimasi_biaya_per_bulan    Float              @default(0)
+  estimasi_laba_per_bulan     Float              @default(0)
+  estimasi_biaya_rumah_tangga Float              @default(0)
+  pendapatan_diluar_usaha     String             @db.VarChar(15)
+  account_ownership           String             @db.VarChar(45)
+  account_number              String             @db.VarChar(45)
+  desired_financing           String             @db.VarChar(45)
+  jangka_waktu                Int                @default(0)
+  sistem_angsuran             String?            @db.VarChar(255)
+  status                      String             @db.VarChar(45)
+  created_at                  DateTime           @default(now())
+  updated_at                  DateTime?          @updatedAt
+  application_logs            application_logs[]
+  banks                       banks              @relation(fields: [bank_id], references: [id], onDelete: NoAction)
+  installments                installments?      @relation(fields: [installment_id], references: [id])
+  users                       users              @relation(fields: [user_id], references: [id], onDelete: NoAction)
+  loan_programs               LoanProgram?       @relation(fields: [loan_program_id], references: [id])
+  financing_purpose           FinancingPurpose?  @relation(fields: [financing_purpose_id], references: [id])
+  partner                     users?             @relation("applications_partner_idTousers", fields: [partner_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "fk_partner_applications")
+  transactions                transactions[]
+
+  @@index([bank_id], map: "applications_bank_id_fkey")
+  @@index([installment_id], map: "applications_installment_id_fkey")
+  @@index([user_id], map: "applications_user_id_fkey")
+  @@index([partner_id], map: "fk_partner_applications")
+}
+
+model installments {
+  id                Int             @id @default(autoincrement())
+  loan_interest_id  Int?
+  plafond_id        Int?
+  tagihan           Decimal?        @db.Decimal(15, 2)
+  total_tagihan     Decimal?        @db.Decimal(15, 2)
+  realisasi_plafond Decimal?        @db.Decimal(15, 2)
+  created_at        DateTime        @default(now())
+  updated_at        DateTime?       @updatedAt
+  applications      applications[]
+  loan_interests    loan_interests? @relation(fields: [loan_interest_id], references: [id])
+  plafonds          plafonds?       @relation(fields: [plafond_id], references: [id])
+  loan_bills        loan_bills[]
+  rekap             rekap[]
+
+  @@index([loan_interest_id], map: "installments_loan_interest_id_fkey")
+  @@index([plafond_id], map: "installments_plafond_id_fkey")
+}
+
+model loan_interests {
+  id             Int            @id @default(autoincrement())
+  bunga_pinjaman Float          @default(0)
+  created_at     DateTime       @default(now())
+  updated_at     DateTime?      @updatedAt
+  installments   installments[]
+}
+
+model plafonds {
+  id           Int            @id @default(autoincrement())
+  plafond      Float          @unique @default(0)
+  created_at   DateTime       @default(now())
+  updated_at   DateTime?      @updatedAt
+  installments installments[]
+}
+
+model application_logs {
+  id             Int           @id @default(autoincrement())
+  application_id Int?
+  step           String        @db.VarChar(255)
+  status         String        @db.VarChar(45)
+  note           String?       @db.Text
+  created_at     DateTime      @default(now())
+  updated_at     DateTime?     @updatedAt
+  applications   applications? @relation(fields: [application_id], references: [id])
+
+  @@index([application_id], map: "application_logs_application_id_fkey")
+}
+
+model notifications {
+  id                 Int                  @id @default(autoincrement())
+  user_id            Int
+  title              String               @db.VarChar(60)
+  content            String               @db.Text
+  status             String               @db.VarChar(60)
+  created_at         DateTime             @default(now())
+  updated_at         DateTime?            @updatedAt
+  users              users                @relation(fields: [user_id], references: [id], onDelete: NoAction)
+  role_notifications role_notifications[]
+
+  @@index([user_id], map: "notifications_user_id_fkey")
+}
+
+model loan_bills {
+  id                             Int                              @id @default(autoincrement())
+  uuid                           String?                          @unique @default(uuid())
+  installment_id                 Int
+  tenor                          String                           @db.VarChar(45)
+  bill_amount                    Float                            @default(0)
+  principal_bill                 Float?                           @default(0)
+  service_fee                    Float?                           @default(0)
+  due_date                       DateTime                         @db.Date
+  bill_paid                      Float?                           @default(0)
+  invoice_url                    String?                          @db.VarChar(255)
+  remain_principal_bill          Float?                           @default(0)
+  remain_service_fee             Float?                           @default(0)
+  status                         String?                          @db.VarChar(45)
+  created_at                     DateTime                         @default(now())
+  updated_at                     DateTime?                        @updatedAt
+  loan_bill_installment_payments loan_bill_installment_payments[]
+  installments                   installments                     @relation(fields: [installment_id], references: [id], onDelete: NoAction)
+
+  @@index([installment_id], map: "loan_bills_installment_id_fkey")
+}
+
+model installment_payments {
+  id                             Int                              @id @default(autoincrement())
+  payment_method_id              Int?
+  unpaid_bill_id                 Int?
+  uuid                           String?                          @unique @default(uuid())
+  bill_amount                    Float                            @default(0)
+  principal_bill                 Float?                           @default(0)
+  service_fee                    Float?                           @default(0)
+  transaction_code               String                           @db.VarChar(45)
+  transaction_date               DateTime?
+  payment_amount                 Float
+  status                         String                           @db.VarChar(45)
+  invoice_url                    String?                          @db.VarChar(255)
+  remain_principal_bill          Float?                           @default(0)
+  remain_service_fee             Float?                           @default(0)
+  created_at                     DateTime                         @default(now())
+  updated_at                     DateTime?                        @updatedAt
+  payment_methods                payment_methods?                 @relation(fields: [payment_method_id], references: [id])
+  unpaid_bills                   unpaid_bills?                    @relation(fields: [unpaid_bill_id], references: [id])
+  loan_bill_installment_payments loan_bill_installment_payments[]
+
+  @@index([payment_method_id], map: "installment_payments_payment_method_id_fkey")
+  @@index([unpaid_bill_id], map: "installment_payments_unpaid_bill_id_fkey")
+}
+
+model loan_bill_installment_payments {
+  id                     Int                   @id @default(autoincrement())
+  loan_bill_id           Int?
+  installment_payment_id Int?
+  created_at             DateTime              @default(now())
+  updated_at             DateTime?             @updatedAt
+  installment_payments   installment_payments? @relation(fields: [installment_payment_id], references: [id])
+  loan_bills             loan_bills?           @relation(fields: [loan_bill_id], references: [id])
+
+  @@index([installment_payment_id], map: "loan_bill_installment_payments_installment_payment_id_fkey")
+  @@index([loan_bill_id], map: "loan_bill_installment_payments_loan_bill_id_fkey")
+}
+
+model payment_methods {
+  id                   Int                    @id @default(autoincrement())
+  uuid                 String                 @unique @default(uuid())
+  code                 String                 @db.VarChar(45)
+  type                 String                 @db.VarChar(45)
+  name                 String                 @db.VarChar(45)
+  handling_cost        Int?                   @default(0)
+  percentage_cost      Decimal?               @db.Decimal(15, 0)
+  account_number       String?                @db.VarChar(45)
+  account_name         String?                @db.VarChar(45)
+  icon                 String?                @db.VarChar(45)
+  created_at           DateTime               @default(now())
+  updated_at           DateTime?              @updatedAt
+  installment_payments installment_payments[]
+}
+
+model unpaid_bills {
+  id                    Int                    @id @default(autoincrement())
+  tenor                 String                 @db.VarChar(45)
+  amount_principal_bill Float?
+  amount_service_fee    Float?
+  created_at            DateTime               @default(now())
+  updated_at            DateTime?              @updatedAt
+  installment_payments  installment_payments[]
+}
+
+model wallets {
+  id         Int       @id @default(autoincrement())
+  user_id    Int?
+  name       String    @db.VarChar(255)
+  balance    Decimal   @db.Decimal(15, 0)
+  created_at DateTime  @default(now())
+  updated_at DateTime? @updatedAt
+  users      users?    @relation(fields: [user_id], references: [id])
+
+  @@index([user_id], map: "wallets_user_id_fkey")
+}
+
+model operational_logbooks {
+  id          Int                       @id @default(autoincrement())
+  user_id     Int?
+  date        DateTime                  @db.Date
+  category    String                    @db.VarChar(45)
+  amount      Decimal                   @default(0) @db.Decimal(15, 0)
+  description String                    @db.Text
+  type        operational_logbook_types @default(Pemasukan)
+  created_at  DateTime                  @default(now())
+  updated_at  DateTime?                 @updatedAt
+  users       users?                    @relation(fields: [user_id], references: [id])
+
+  @@index([user_id], map: "operational_logbooks_user_id_fkey")
+}
+
+model va {
+  id                Int       @id @default(autoincrement())
+  user_id           Int       @unique
+  va_principal_bill Decimal   @db.Decimal(15, 0)
+  va_service_bill   Decimal   @db.Decimal(15, 0)
+  tenor             Int
+  created_at        DateTime  @default(now())
+  updated_at        DateTime? @updatedAt
+  users             users     @relation(fields: [user_id], references: [id], onDelete: NoAction)
+}
+
+model collectability {
+  id                   Int       @id @default(autoincrement())
+  user_id              Int       @unique
+  kolektabilitas_p     Int
+  kolektabilitas_b     Int
+  kolektabilitas_final Int
+  created_at           DateTime  @default(now())
+  updated_at           DateTime? @updatedAt
+  users                users     @relation(fields: [user_id], references: [id], onDelete: NoAction)
+}
+
+model transactions {
+  id              Int           @id @default(autoincrement())
+  application_id  Int?
+  total_pencairan Decimal?      @db.Decimal(15, 0)
+  jumlah_jaminan  String?       @db.Text
+  created_at      DateTime      @default(now())
+  updated_at      DateTime?     @updatedAt
+  applications    applications? @relation(fields: [application_id], references: [id])
+
+  @@index([application_id], map: "application_id")
+}
+
+model remains {
+  id              Int       @id @default(autoincrement())
+  user_id         Int       @unique
+  sisihan_piutang Float
+  sisihan_pnbp    Float
+  created_at      DateTime  @default(now())
+  updated_at      DateTime? @updatedAt
+  users           users     @relation(fields: [user_id], references: [id], onDelete: NoAction)
+}
+
+model user_types {
+  id         Int       @id @default(autoincrement())
+  user_id    Int       @unique
+  name       String    @db.VarChar(45)
+  created_at DateTime  @default(now())
+  updated_at DateTime? @updatedAt
+  users      users     @relation(fields: [user_id], references: [id], onDelete: NoAction)
+}
+
+model role_notifications {
+  id              Int           @id @default(autoincrement())
+  role_id         Int
+  notification_id Int
+  created_at      DateTime      @default(now())
+  updated_at      DateTime?     @updatedAt
+  notifications   notifications @relation(fields: [notification_id], references: [id], onDelete: NoAction)
+  roles           roles         @relation(fields: [role_id], references: [id], onDelete: NoAction)
+
+  @@index([notification_id], map: "role_notifications_notification_id_fkey")
+  @@index([role_id], map: "role_notifications_role_id_fkey")
+}
+
+model rekap {
+  id                   Int          @id
+  installment_id       Int
+  pokok_terbayar       Decimal?     @db.Decimal(15, 2)
+  bunga_terbayar       Decimal?     @db.Decimal(15, 2)
+  tunggakan_pokok      Decimal?     @db.Decimal(15, 2)
+  tunggakan_bunga      Decimal?     @db.Decimal(15, 2)
+  umur_tunggakan_pokok Int?
+  umur_tunggakan_bunga Int?
+  outstanding_pokok    Decimal?     @db.Decimal(15, 2)
+  outstanding_bunga    Decimal?     @db.Decimal(15, 2)
+  status_kredit        String?      @db.VarChar(255)
+  sistem_angsuran      String?      @db.VarChar(255)
+  tahun_lunas          Int?
+  tgl_jatuh_tempo      DateTime?    @db.Date
+  tgl_terakhir_bayar   DateTime?    @db.Date
+  tgl_cair             DateTime?    @db.Date
+  keterangan           String?      @db.VarChar(255)
+  installments         installments @relation(fields: [installment_id], references: [id], onDelete: NoAction)
+
+  @@index([installment_id], map: "fk_rekap_installment_id")
+}
+
+model logbook_activities {
+  id             Int                         @id @default(autoincrement())
+  user_id        Int
+  nama_debitur   String?                     @db.VarChar(255)
+  category       logbook_activity_categories @default(Sosialisasi)
+  date           DateTime                    @db.Date
+  description    String                      @db.Text
+  created_at     DateTime                    @default(now())
+  updated_at     DateTime?                   @updatedAt
+  users          users                       @relation(fields: [user_id], references: [id], onDelete: NoAction)
+  logbook_photos logbook_photos[]
+
+  @@index([user_id], map: "logbook_activities_user_id_fkey")
+}
+
+model logbook_photos {
+  id                  Int                 @id @default(autoincrement())
+  logbook_activity_id Int?
+  photo               String              @db.VarChar(255)
+  created_at          DateTime            @default(now())
+  updated_at          DateTime?           @updatedAt
+  logbook_activities  logbook_activities? @relation(fields: [logbook_activity_id], references: [id], onDelete: NoAction)
+
+  @@index([logbook_activity_id], map: "logbook_photos_logbook_activity_id_fkey")
+}
+
+model COA {
+  id                    Int              @id @default(autoincrement())
+  code                  String           @db.VarChar(255)
+  name                  String           @db.Text
+  created_at            DateTime         @default(now())
+  updated_at            DateTime?        @updatedAt
+  subCategoryCredits    COASubCategory[] @relation("credit_coa_id")
+  subCategoryDebits     COASubCategory[] @relation("debit_coa_id")
+  debitGeneralJournals  GeneralJournal[] @relation("credit_coa_id")
+  creditGeneralJournals GeneralJournal[] @relation("debit_coa_id")
+
+  @@map("coas")
+}
+
+model COACategory {
+  id            Int              @id @default(autoincrement())
+  name          String           @db.Text
+  created_at    DateTime         @default(now())
+  updated_at    DateTime?        @updatedAt
+  subcategories COASubCategory[]
+
+  @@map("coa_categories")
+}
+
+model COASubCategory {
+  id              Int               @id @default(autoincrement())
+  coa_category_id Int
+  name            String            @db.Text
+  debit_coa_id    Int
+  credit_coa_id   Int
+  created_at      DateTime          @default(now())
+  updated_at      DateTime?         @updatedAt
+  AutomaticRecord AutomaticRecord[]
+  GeneralJournal  GeneralJournal[]
+  COACategory     COACategory       @relation(fields: [coa_category_id], references: [id])
+  COACredit       COA               @relation("credit_coa_id", fields: [credit_coa_id], references: [id])
+  COADebit        COA               @relation("debit_coa_id", fields: [debit_coa_id], references: [id])
+
+  @@index([coa_category_id], map: "coa_sub_categories_coa_category_id_fkey")
+  @@index([credit_coa_id], map: "coa_sub_categories_credit_coa_id_fkey")
+  @@index([debit_coa_id], map: "coa_sub_categories_debit_coa_id_fkey")
+  @@map("coa_sub_categories")
+}
+
+model AutomaticRecord {
+  id                  Int            @id @default(autoincrement())
+  name                String         @db.VarChar(255)
+  coa_sub_category_id Int
+  created_at          DateTime       @default(now())
+  updated_at          DateTime?      @updatedAt
+  COASubCategory      COASubCategory @relation(fields: [coa_sub_category_id], references: [id])
+
+  @@index([coa_sub_category_id], map: "automatic_records_coa_sub_category_id_fkey")
+  @@map("automatic_records")
+}
+
+model GeneralJournal {
+  id                  Int            @id @default(autoincrement())
+  uuid                String?        @unique @default(uuid())
+  coa_sub_category_id Int
+  debit_coa_id        Int?
+  credit_coa_id       Int?
+  date                DateTime       @db.Date
+  debit_amount        Decimal?        @db.Decimal(15, 2)
+  credit_amount       Decimal?        @db.Decimal(15, 2)
+  note                String?        @db.Text
+  created_at          DateTime       @default(now())
+  updated_at          DateTime?      @updatedAt
+  COASubCategory      COASubCategory @relation(fields: [coa_sub_category_id], references: [id])
+  COADebit            COA?            @relation("debit_coa_id", fields: [debit_coa_id], references: [id])
+  COACredit           COA?            @relation("credit_coa_id", fields: [credit_coa_id], references: [id])
+
+  @@index([coa_sub_category_id], map: "general_journals_coa_sub_category_id_fkey")
+  @@index([credit_coa_id], map: "general_journals_credit_coa_id_fkey")
+  @@index([debit_coa_id], map: "general_journals_debit_coa_id_fkey")
+  @@map("general_journals")
+}
+
+model sistem_angsuran {
+  id              Int     @id @default(autoincrement())
+  sistem_angsuran String? @db.VarChar(255)
+}
+
+model Cultivation {
+  id                    Int                @id @default(autoincrement())
+  cultivation_result_id Int?               @unique
+  user_id               Int
+  pond_name             String             @db.VarChar(255)
+  pond_quantity         Float              @default(0)
+  pond_capacity         Float              @default(0)
+  pond_address          String             @db.Text
+  phone_number          String             @db.VarChar(45)
+  nama_penanggung_jawab String             @db.VarChar(255)
+  created_at            DateTime           @default(now())
+  updated_at            DateTime?          @updatedAt
+  cultivation_report_id Int?
+  cultivation_reports   CultivationReport? @relation(fields: [cultivation_report_id], references: [id])
+  CultivationResult     CultivationResult? @relation(fields: [cultivation_result_id], references: [id])
+  users                 users              @relation(fields: [user_id], references: [id])
+  SeedSpread            SeedSpread?
+
+  @@index([cultivation_report_id], map: "cultivations_cultivation_report_id_fkey")
+  @@index([user_id], map: "cultivations_user_id_fkey")
+  @@map("cultivations")
+}
+
+model CultivationResult {
+  id            Int          @id @default(autoincrement())
+  tanggal_panen DateTime     @db.Date
+  jumlah_panen  Float        @default(0)
+  sale_price    Float        @default(0)
+  created_at    DateTime     @default(now())
+  updated_at    DateTime?    @updatedAt
+  Cultivation   Cultivation?
+
+  @@map("cultivation_results")
+}
+
+model CultivationReport {
+  id               Int           @id @default(autoincrement())
+  date             DateTime      @db.Date
+  feed_type        String        @db.VarChar(100)
+  feed_quantity    Float         @default(0)
+  berat_ikan       Float         @default(0)
+  jumlah_ikan_mati Float         @default(0)
+  catatan          String        @db.Text
+  created_at       DateTime      @default(now())
+  updated_at       DateTime?     @updatedAt
+  cultivations     Cultivation[]
+
+  @@map("cultivation_reports")
+}
+
+model SeedSpread {
+  id                   Int          @id @default(autoincrement())
+  cultivation_id       Int?         @unique
+  comodity_type_id     Int
+  quantity             Float        @default(0)
+  rerata_berat_bibit   Float        @default(0)
+  target_jumlah_panen  Float        @default(0)
+  survival_rate        Decimal      @db.Decimal(15, 2)
+  feed_convension_rate Float        @default(0)
+  price                Decimal      @db.Decimal(15, 2)
+  spread_date          DateTime     @db.Date
+  created_at           DateTime     @default(now())
+  updated_at           DateTime?    @updatedAt
+  ComodityType         ComodityType @relation(fields: [comodity_type_id], references: [id])
+  Cultivation          Cultivation? @relation(fields: [cultivation_id], references: [id])
+
+  @@index([comodity_type_id], map: "seed_spreads_comodity_type_id_fkey")
+  @@map("seed_spreads")
+}
+
+model ComodityType {
+  id         Int          @id @default(autoincrement())
+  name       String       @db.VarChar(60)
+  price      Float        @default(0)
+  created_at DateTime     @default(now())
+  updated_at DateTime?    @updatedAt
+  SeedSpread SeedSpread[]
+
+  @@map("comodity_types")
+}
+
+enum operational_logbook_types {
+  Pengeluaran
+  Pemasukan
+}
+
+enum logbook_activity_categories {
+  Sosialisasi
+  Pendampingan_Debitur
+}

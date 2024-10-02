@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pembayaran Berhasil</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+
+            .container {
+                width: 70%;
+                margin: 80px auto;
+                padding: 20px;
+                background-color: #fff;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+
+            .header {
+                text-align: right;
+                margin-bottom: 20px;
+            }
+
+            .header-1 {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .header-1 h1 {
+                font-size: 18px;
+            }
+            .header p {
+                font-size: 14px;
+                color: #666;
+            }
+
+            .content {
+                width: 100%;
+            }
+
+            .content-wrap {
+                margin-bottom: -10px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .content-1 h2 {
+                text-align: center;
+                margin: 50px;
+            }
+
+            .table-wrap {
+                margin-top: 20px;
+                display: flex;
+                flex: 1 1 auto;
+            }
+
+            .table {
+                flex-shrink: 0;
+                min-width: 100%;
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            .table th,
+            .table td {
+                border: 1px solid #ddd;
+                padding: 12px;
+            }
+
+            .table .td-value {
+                text-align: right;
+            }
+
+            .table th {
+                width: 500px;
+                background-color: #f0f0f0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="header-1">
+                    <img
+                        src="../../public/assets/logo.png"
+                        alt=""
+                        width="160"
+                    />
+                    <div class="wrapper">
+                        <h1>Lunas</h1>
+                        <p>Date: <%=data.transaction_date%></p>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-1">
+                    <h2>Pembayaran Berhasil!</h2>
+                    <div class="content-wrap">
+                        <p>No. Invoice:</p>
+                        <p><%=data.transaction_code%></p>
+                    </div>
+                    <div class="content-wrap">
+                        <p>Tanggal:</p>
+                        <p><%=data.transaction_date%></p>
+                    </div>
+                    <div class="content-wrap">
+                        <p>Metode Pembayaran:</p>
+                        <p><%=data.payment_methods.code%></p>
+                    </div>
+                    <div class="content-wrap">
+                        <p>Tagihan ke:</p>
+                        <p>
+                            <%=data.loan_bill_installment_payments[0].loan_bills.tenor%>
+                        </p>
+                    </div>
+                    <div class="content-wrap">
+                        <p>Jatuh Tempo:</p>
+                        <p>
+                            <%=data.loan_bill_installment_payments[0].loan_bills.due_date%>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="table-wrap">
+                <table class="table">
+                    <tr>
+                        <th>Rincian</th>
+                        <th>Jumlah</th>
+                    </tr>
+                    <tr>
+                        <td>Tagihan Pokok</td>
+                        <td class="td-value"><%=data.principal_bill%></td>
+                    </tr>
+                    <tr>
+                        <td>Tagihan Sebelumnya</td>
+                        <td class="td-value">
+                            <%=data.unpaid_bill?data.unpaid_bill:0%>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jasa Layanan</td>
+                        <td class="td-value"><%=data.service_fee%></td>
+                    </tr>
+                    <tr>
+                        <td>Total Tagihan</td>
+                        <td class="td-value"><%=data.bill_amount%></td>
+                    </tr>
+                    <tr>
+                        <td>Total Pembayaran</td>
+                        <td class="td-value"><%=data.payment_amount%></td>
+                    </tr>
+                    <tr>
+                        <td>Sisa Tagihan</td>
+                        <td class="td-value"><%=data.remain_bill%></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
